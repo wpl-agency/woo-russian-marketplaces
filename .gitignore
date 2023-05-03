@@ -1,0 +1,11 @@
+# ignore node dependency directories
+node_modules/
+.idea
+vendor/
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+.phpcs.cache
