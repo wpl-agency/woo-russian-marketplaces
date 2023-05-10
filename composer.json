@@ -1,0 +1,46 @@
+{
+  "name": "wplovers/woo-russian-marketplace",
+  "description": "Плагин под WooCommerce для продажи товаров через Озон/Вайлдбериз/Яндекс маркет.",
+  "type": "wordpress-plugin",
+  "license": "GPL-2.0-or-later",
+  "autoload": {
+    "psr-4": {
+      "WPlovers\\WooRussianMarketplaces\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Mikhail Kobzarev",
+      "email": "mikhail@kobzarev.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "platform": {
+      "php": "7.4"
+    },
+    "allow-plugins": {
+      "kylekatarnls/update-helper": true
+    }
+  },
+  "require": {
+    "php": ">=7.4",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest",
+    "squizlabs/php_codesniffer": "^3.6",
+    "phpcompatibility/php-compatibility": "^9.3",
+    "phpcompatibility/phpcompatibility-wp": "^2.1",
+    "wp-coding-standards/wpcs": "^2.3",
+    "php-coveralls/php-coveralls": "^v2.4",
+    "vimeo/psalm": "^4.20",
+    "humanmade/psalm-plugin-wordpress": "^2.0"
+  },
+  "scripts": {
+    "phpcs": "phpcs --standard=./phpcs.xml",
+    "phpcbf": "phpcbf --standard=./phpcs.xml",
+    "psalm": "psalm --config=./psalm.xml"
+  }
+}
