@@ -6,7 +6,7 @@ Requires at least: 5.2
 Tested up to: 6.3
 Requires PHP: 7.4
 Stable tag: 1.0.0
-License: GPL2
+License: GPL-2.0-or-later
 
 Link your WooCommerce store to Russian marketplaces and sell more. Adds link-buttons in the card to the same product on marketplaces
 
