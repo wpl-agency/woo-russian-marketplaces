@@ -1,0 +1,78 @@
+.wplovers-gopro {
+	border-left: 5px solid #0058FF;
+	padding: 20px 25px;
+	background-color: #EFF5FF;
+	margin: 12px;
+}
+.wplovers-gopro p {
+	padding: 0;
+	margin: 0 0 20px 0 !important;
+	font-size: 16px !important;
+}
+.wplovers-gopro ul {
+	padding: 0;
+	list-style: none;
+	margin: 0 0 20px 0;
+	font-size: 16px;
+}
+.wplovers-gopro ul li {
+	font-size: 0.9em;
+	padding: 0;
+	margin: 0 0 15px 0;
+	line-height: 1em;
+}
+.wplovers-gopro ul li:before {
+	display: inline-block;
+	content: "\f15e";
+	font-family: Dashicons, sans-serif, serif;
+	font-size: 26px;
+	margin-right: 9px;
+	vertical-align: middle;
+}
+.wplovers-gopro p:last-child {
+	margin-bottom: 0;
+}
+.wplovers_product_options_marketplaces_options a:before {
+	content: "\f513" !important;
+}
+#wplovers_product_options_marketplaces input[type="text"] {
+	width: 100%;
+}
+.wplovers-spoiler {
+	margin-top: 20px;
+	background-color: #fff;
+	border: 1px solid #d9d9d9;
+	/*box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);*/
+}
+.wplovers-spoiler__name {
+	cursor: pointer;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 17px;
+	font-weight: 700;
+	line-height: 40px;
+	user-select: none;
+}
+.wplovers-spoiler__name:before {
+	content: '\2212';
+	margin-right: 12px;
+}
+.wplovers-spoiler__data {
+	border-top: 1px solid #d9d9d9;
+	padding: 15px;
+}
+.wplovers-spoiler--collapsed .wplovers-spoiler__data {
+	display: none;
+}
+.wplovers-spoiler--collapsed .wplovers-spoiler__name {
+	display: block;
+}
+.wplovers-spoiler--enabled .wplovers-spoiler__name {
+	background-color: #F4FFE9;
+}
+.wplovers-spoiler--collapsed .wplovers-spoiler__name:before {
+	content: '\002B';
+}
+.wplovers-spoiler__data h2 {
+	margin-top: 0;
+}
