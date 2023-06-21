@@ -4,7 +4,7 @@
  * Description: Добавьте ссылки на свои товары в Российских маркетплейсах.
  * Author: WPlovers
  * Author URI: https://wplovers.pro/
- * Version: 1.0.4
+ * Version: 1.0.5
  *
  * @package wplovers-woo-russian-marketplaces
  */
