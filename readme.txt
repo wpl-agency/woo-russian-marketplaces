@@ -1,5 +1,5 @@
 === Russian marketplaces for WooCommerce ===
-Contributors: mihdan
+Contributors: mihdan, donatory
 Tags: WooCommerce,Wildberries,Ozon,Yandex Market,Avito,Lamoda,SberMegaMarket,Aliexpress
 Donate link: https://www.kobzarev.com/donate/
 Requires at least: 5.2
@@ -49,7 +49,7 @@ That\'s all! Links to this product on marketplaces will appear on the product pa
 
 Full integration supports uploading and downloading products, orders, images, descriptions, balances and flexible price management:
 
-- Integration WooCommerce with Wildberries
+- Integration WooCommerce with Ozon
 - Other marketplaces are coming soon
 
 == Frequently Asked Questions ==
