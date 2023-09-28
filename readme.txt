@@ -5,7 +5,7 @@ Donate link: https://www.kobzarev.com/donate/
 Requires at least: 5.2
 Tested up to: 6.3
 Requires PHP: 7.4
-Stable tag: 0.1.0
+Stable tag: 0.1.1
 License: GPL-2.0-or-later
 
 Link your WooCommerce store to Russian marketplaces and sell more. Adds link-buttons in the card to the same product on marketplaces
@@ -73,3 +73,12 @@ Of course yes. This can and even should be done to increase sales and trust to y
 = Should I add links to my products on marketplaces? =
 
 Of course yes! Unless, of course, you want your products to be sold, and not someone else\'s ))
+
+== Changelog ==
+
+= 0.1.1 (29.09.2023) =
+- Added new filter `wplovers/woo_russian_marketplaces/marketplaces`
+- Removed unused code
+
+= 0.1.0 (30.06.2023) =
+- Plugin initialization

@@ -41,71 +41,74 @@ abstract class Marketplace {
 	 * @return array
 	 */
 	public static function get_merketplaces(): array {
-		return [
-			'wildberries'    => [
-				'name'        => __( 'Wildberries', 'wplovers-woo-russian-marketplaces' ),
-				'css'         => [
-					'background-color' => '#CB11AB',
-					'color'            => '#FFFFFF',
+		return apply_filters(
+			'wplovers/woo_russian_marketplaces/marketplaces',
+			[
+				'wildberries'    => [
+					'name'        => __( 'Wildberries', 'wplovers-woo-russian-marketplaces' ),
+					'css'         => [
+						'background-color' => '#CB11AB',
+						'color'            => '#FFFFFF',
+					],
+					'placeholder' => 'https://www.wildberries.ru/&hellip;',
 				],
-				'placeholder' => 'https://www.wildberries.ru/&hellip;',
-			],
-			'ozon'           => [
-				'name'        => __( 'Ozon', 'wplovers-woo-russian-marketplaces' ),
-				'css'         => [
-					'background-color' => '#005BFF',
-					'color'            => '#FFFFFF',
+				'ozon'           => [
+					'name'        => __( 'Ozon', 'wplovers-woo-russian-marketplaces' ),
+					'css'         => [
+						'background-color' => '#005BFF',
+						'color'            => '#FFFFFF',
+					],
+					'placeholder' => 'https://www.ozon.ru/&hellip;',
 				],
-				'placeholder' => 'https://www.ozon.ru/&hellip;',
-			],
-			'yandex_market'  => [
-				'name'        => __( 'Yandex Market', 'wplovers-woo-russian-marketplaces' ),
-				'css'         => [
-					'background-color' => '#FFCC00',
-					'color'            => '#000000',
+				'yandex_market'  => [
+					'name'        => __( 'Yandex Market', 'wplovers-woo-russian-marketplaces' ),
+					'css'         => [
+						'background-color' => '#FFCC00',
+						'color'            => '#000000',
+					],
+					'placeholder' => 'https://market.yandex.ru/&hellip;',
 				],
-				'placeholder' => 'https://market.yandex.ru/&hellip;',
-			],
-			'avito'          => [
-				'name'        => __( 'Avito', 'wplovers-woo-russian-marketplaces' ),
-				'css'         => [
-					'background-color' => '#00AAFF',
-					'color'            => '#FFFFFF',
+				'avito'          => [
+					'name'        => __( 'Avito', 'wplovers-woo-russian-marketplaces' ),
+					'css'         => [
+						'background-color' => '#00AAFF',
+						'color'            => '#FFFFFF',
+					],
+					'placeholder' => 'https://www.avito.ru/&hellip;',
 				],
-				'placeholder' => 'https://www.avito.ru/&hellip;',
-			],
-			'lamoda'         => [
-				'name'        => __( 'Lamoda', 'wplovers-woo-russian-marketplaces' ),
-				'css'         => [
-					'background-color' => '#000000',
-					'color'            => '#FFFFFF',
+				'lamoda'         => [
+					'name'        => __( 'Lamoda', 'wplovers-woo-russian-marketplaces' ),
+					'css'         => [
+						'background-color' => '#000000',
+						'color'            => '#FFFFFF',
+					],
+					'placeholder' => 'https://www.lamoda.ru/&hellip;',
 				],
-				'placeholder' => 'https://www.lamoda.ru/&hellip;',
-			],
-			'sbermegamarket' => [
-				'name'        => __( 'SberMegaMarket', 'wplovers-woo-russian-marketplaces' ),
-				'css'         => [
-					'background-color' => '#9B38DC',
-					'color'            => '#FFFFFF',
+				'sbermegamarket' => [
+					'name'        => __( 'SberMegaMarket', 'wplovers-woo-russian-marketplaces' ),
+					'css'         => [
+						'background-color' => '#9B38DC',
+						'color'            => '#FFFFFF',
+					],
+					'placeholder' => 'https://sbermegamarket.ru/&hellip;',
 				],
-				'placeholder' => 'https://sbermegamarket.ru/&hellip;',
-			],
-			'livemaster'     => [
-				'name'        => __( 'Ярмарка мастеров', 'wplovers-woo-russian-marketplaces' ),
-				'css'         => [
-					'background-color' => '#EA7913',
-					'color'            => '#FFFFFF',
+				'livemaster'     => [
+					'name'        => __( 'Ярмарка мастеров', 'wplovers-woo-russian-marketplaces' ),
+					'css'         => [
+						'background-color' => '#EA7913',
+						'color'            => '#FFFFFF',
+					],
+					'placeholder' => 'https://www.livemaster.ru/&hellip;',
 				],
-				'placeholder' => 'https://www.livemaster.ru/&hellip;',
-			],
-			'aliexpress'     => [
-				'name'        => __( 'Aliexpress', 'wplovers-woo-russian-marketplaces' ),
-				'css'         => [
-					'background-color' => '#CC290A',
-					'color'            => '#FFFFFF',
+				'aliexpress'     => [
+					'name'        => __( 'Aliexpress', 'wplovers-woo-russian-marketplaces' ),
+					'css'         => [
+						'background-color' => '#CC290A',
+						'color'            => '#FFFFFF',
+					],
+					'placeholder' => 'https://aliexpress.ru/&hellip;',
 				],
-				'placeholder' => 'https://aliexpress.ru/&hellip;',
-			],
-		];
+			]
+		);
 	}
 }

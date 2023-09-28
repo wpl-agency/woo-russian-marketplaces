@@ -74,6 +74,7 @@ class Metabox {
 		foreach ( $marketplaces as $marketplace_id => $data ) {
 			if ( Settings::get_option( 'marketplaces_' . $marketplace_id . '_enabled', 'no' ) === 'yes' ) {
 				$note = false;
+				break;
 			}
 		}
 		?>
