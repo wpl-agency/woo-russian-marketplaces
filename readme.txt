@@ -3,9 +3,9 @@ Contributors: mihdan, donatory
 Tags: WooCommerce,Wildberries,Ozon,Yandex Market,Avito,Lamoda,SberMegaMarket,Aliexpress
 Donate link: https://www.kobzarev.com/donate/
 Requires at least: 5.2
-Tested up to: 6.3
+Tested up to: 6.4
 Requires PHP: 7.4
-Stable tag: 0.1.1
+Stable tag: 0.1.2
 License: GPL-2.0-or-later
 
 Link your WooCommerce store to Russian marketplaces and sell more. Adds link-buttons in the card to the same product on marketplaces
@@ -75,6 +75,10 @@ Of course yes. This can and even should be done to increase sales and trust to y
 Of course yes! Unless, of course, you want your products to be sold, and not someone else\'s ))
 
 == Changelog ==
+
+= 0.1.2 (01.12.2023) =
+- Updated to work with WordPress 6.4.+
+- Updated to work with WordPress 8.3.+
 
 = 0.1.1 (29.09.2023) =
 - Added new filter `wplovers/woo_russian_marketplaces/marketplaces`
