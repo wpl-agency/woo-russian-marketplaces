@@ -2,7 +2,7 @@
 /**
  * Класс маркетплейса Wildberries.
  *
- * @package wplovers-woo-russian-marketplaces
+ * @package woo-russian-marketplaces
  */
 
 namespace WPlovers\WooRussianMarketplaces\Marketplaces;
@@ -28,7 +28,7 @@ class Wildberries extends Marketplace {
 	 * @return string
 	 */
 	public function get_name(): string {
-		return __( 'Wildberries', 'wplovers-woo-russian-marketplaces' );
+		return __( 'Wildberries', 'woo-russian-marketplaces' );
 	}
 
 	/**
