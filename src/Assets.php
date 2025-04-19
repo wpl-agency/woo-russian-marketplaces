@@ -2,7 +2,7 @@
 /**
  * Подключает ассеты.
  *
- * @package woo-russian-marketplaces
+ * @package russian-marketplaces-for-woocommerce
  */
 
 namespace WPlovers\WooRussianMarketplaces;

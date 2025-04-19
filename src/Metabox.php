@@ -2,7 +2,7 @@
 /**
  * Вкладка настроек товара в метабоксе WooCommerce.
  *
- * @package woo-russian-marketplaces
+ * @package russian-marketplaces-for-woocommerce
  * @link https://woocommerce.com/document/editing-product-data-tabs/
  * @link https://misha.agency/course/nastrojki-tovara-woocommerce
  */
@@ -85,12 +85,12 @@ class Metabox {
 					<?php
 					echo wp_kses_post(
 						/* translators: settings URL */
-						sprintf( __( 'All marketplaces are disabled. Enable at least one in <a href="%s">Settings</a>.', 'woo-russian-marketplaces' ), Settings::get_settings_link() )
+						sprintf( __( 'All marketplaces are disabled. Enable at least one in <a href="%s">Settings</a>.', 'russian-marketplaces-for-woocommerce' ), Settings::get_settings_link() )
 					);
 					?>
 				</p>
 			<?php else : ?>
-				<p><?php esc_html_e( 'Insert links for this product on marketplaces into the fields', 'woo-russian-marketplaces' ); ?></p>
+				<p><?php esc_html_e( 'Insert links for this product on marketplaces into the fields', 'russian-marketplaces-for-woocommerce' ); ?></p>
 			<?php endif; ?>
 			<?php
 			foreach ( $marketplaces as $marketplace_id => $data ) {
@@ -109,14 +109,14 @@ class Metabox {
 			}
 			?>
 			<div class="wplovers-gopro">
-				<p><b><?php esc_html_e( 'Want to automatically fill in product links?', 'woo-russian-marketplaces' ); ?></b> <?php esc_html_e( 'Connect integration with marketplaces and get:', 'woo-russian-marketplaces' ); ?></p>
+				<p><b><?php esc_html_e( 'Want to automatically fill in product links?', 'russian-marketplaces-for-woocommerce' ); ?></b> <?php esc_html_e( 'Connect integration with marketplaces and get:', 'russian-marketplaces-for-woocommerce' ); ?></p>
 				<ul>
-					<li><?php esc_html_e( 'Automatic download and upload products;', 'woo-russian-marketplaces' ); ?></li>
-					<li><?php esc_html_e( 'Loading orders;', 'woo-russian-marketplaces' ); ?></li>
-					<li><?php esc_html_e( 'Exchange of balances;', 'woo-russian-marketplaces' ); ?></li>
-					<li><?php esc_html_e( 'Flexible pricing.', 'woo-russian-marketplaces' ); ?></li>
+					<li><?php esc_html_e( 'Automatic download and upload products;', 'russian-marketplaces-for-woocommerce' ); ?></li>
+					<li><?php esc_html_e( 'Loading orders;', 'russian-marketplaces-for-woocommerce' ); ?></li>
+					<li><?php esc_html_e( 'Exchange of balances;', 'russian-marketplaces-for-woocommerce' ); ?></li>
+					<li><?php esc_html_e( 'Flexible pricing.', 'russian-marketplaces-for-woocommerce' ); ?></li>
 				</ul>
-				<p><a href="<?php echo esc_url( Settings::get_gopro_link() ); ?>"><b><?php esc_html_e( 'Yes, I want to automate everything!', 'woo-russian-marketplaces' ); ?></b></a></p>
+				<p><a href="<?php echo esc_url( Settings::get_gopro_link() ); ?>"><b><?php esc_html_e( 'Yes, I want to automate everything!', 'russian-marketplaces-for-woocommerce' ); ?></b></a></p>
 			</div>
 		</div>
 		<?php

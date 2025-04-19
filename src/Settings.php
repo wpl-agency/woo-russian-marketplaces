@@ -2,7 +2,7 @@
 /**
  * Настройки плагина.
  *
- * @package woo-russian-marketplaces;
+ * @package russian-marketplaces-for-woocommerce;
  * @link https://woocommerce.com/document/adding-a-section-to-a-settings-tab/
  * @link https://www.tychesoftwares.com/how-to-add-custom-sections-fields-in-woocommerce-settings/
  * @link https://misha.agency/course/woocommerce-options
@@ -23,7 +23,7 @@ class Settings {
 	/**
 	 * Идентификатор секции.
 	 */
-	const SECTION_SLUG = 'woo-russian-marketplaces';
+	const SECTION_SLUG = 'russian-marketplaces-for-woocommerce';
 
 	/**
 	 * Setup hooks.
@@ -121,13 +121,13 @@ class Settings {
 			$settings[] = sprintf(
 				'<a href="%s">%s</a>',
 				self::get_settings_link(),
-				esc_html__( 'Settings', 'woo-russian-marketplaces' )
+				esc_html__( 'Settings', 'russian-marketplaces-for-woocommerce' )
 			);
 
 			$gopro[] = sprintf(
 				'<a href="%s" style="font-weight: bold; color: #524cff">%s</a>',
 				self::get_gopro_link(),
-				esc_html__( 'Get full integrations!', 'woo-russian-marketplaces' )
+				esc_html__( 'Get full integrations!', 'russian-marketplaces-for-woocommerce' )
 			);
 
 			return array_merge( $settings, $defaults, $gopro );
@@ -219,7 +219,7 @@ class Settings {
 				'type' => 'info',
 				'text' => sprintf(
 					'<h1>%s</h1>',
-					__( 'Russian marketplaces settings', 'woo-russian-marketplaces' )
+					__( 'Russian marketplaces settings', 'russian-marketplaces-for-woocommerce' )
 				),
 				'id'   => 'info',
 			]
@@ -227,16 +227,16 @@ class Settings {
 
 		$settings_slider[] = $this->add_field(
 			[
-				'name' => __( 'Buttons block design', 'woo-russian-marketplaces' ),
+				'name' => __( 'Buttons block design', 'russian-marketplaces-for-woocommerce' ),
 				'type' => 'title',
-				'desc' => __( 'Settings of the main block with buttons-links to marketplaces', 'woo-russian-marketplaces' ),
+				'desc' => __( 'Settings of the main block with buttons-links to marketplaces', 'russian-marketplaces-for-woocommerce' ),
 				'id'   => 'buttons_block_design',
 			]
 		);
 
 		$settings_slider[] = $this->add_field(
 			[
-				'name'        => __( 'Margin top', 'woo-russian-marketplaces' ),
+				'name'        => __( 'Margin top', 'russian-marketplaces-for-woocommerce' ),
 				'type'        => 'number',
 				'id'          => 'buttons_block_design_margin_top',
 				'default'     => 20,
@@ -247,7 +247,7 @@ class Settings {
 
 		$settings_slider[] = $this->add_field(
 			[
-				'name'        => __( 'Margin bottom', 'woo-russian-marketplaces' ),
+				'name'        => __( 'Margin bottom', 'russian-marketplaces-for-woocommerce' ),
 				'type'        => 'number',
 				'id'          => 'buttons_block_design_margin_bottom',
 				'default'     => 20,
@@ -258,8 +258,8 @@ class Settings {
 
 		$settings_slider[] = $this->add_field(
 			[
-				'name'        => __( 'Padding', 'woo-russian-marketplaces' ),
-				'desc'        => __( 'Sets padding on all sides of the block', 'woo-russian-marketplaces' ),
+				'name'        => __( 'Padding', 'russian-marketplaces-for-woocommerce' ),
+				'desc'        => __( 'Sets padding on all sides of the block', 'russian-marketplaces-for-woocommerce' ),
 				'type'        => 'number',
 				'id'          => 'buttons_block_design_padding',
 				'default'     => 25,
@@ -270,7 +270,7 @@ class Settings {
 
 		$settings_slider[] = $this->add_field(
 			[
-				'name'        => __( 'Background color', 'woo-russian-marketplaces' ),
+				'name'        => __( 'Background color', 'russian-marketplaces-for-woocommerce' ),
 				'type'        => 'color',
 				'id'          => 'buttons_block_design_background_color',
 				'css'         => 'width:80px',
@@ -281,7 +281,7 @@ class Settings {
 
 		$settings_slider[] = $this->add_field(
 			[
-				'name'        => __( 'Border width', 'woo-russian-marketplaces' ),
+				'name'        => __( 'Border width', 'russian-marketplaces-for-woocommerce' ),
 				'type'        => 'number',
 				'id'          => 'buttons_block_design_border_width',
 				'default'     => 0,
@@ -292,7 +292,7 @@ class Settings {
 
 		$settings_slider[] = $this->add_field(
 			[
-				'name'        => __( 'Border radius', 'woo-russian-marketplaces' ),
+				'name'        => __( 'Border radius', 'russian-marketplaces-for-woocommerce' ),
 				'type'        => 'number',
 				'id'          => 'buttons_block_design_border_radius',
 				'default'     => 15,
@@ -303,7 +303,7 @@ class Settings {
 
 		$settings_slider[] = $this->add_field(
 			[
-				'name'        => __( 'Border color', 'woo-russian-marketplaces' ),
+				'name'        => __( 'Border color', 'russian-marketplaces-for-woocommerce' ),
 				'type'        => 'color',
 				'id'          => 'buttons_block_design_border_color',
 				'css'         => 'width:80px',
@@ -314,12 +314,12 @@ class Settings {
 
 		$settings_slider[] = $this->add_field(
 			[
-				'name'    => __( 'Where to place', 'woo-russian-marketplaces' ),
+				'name'    => __( 'Where to place', 'russian-marketplaces-for-woocommerce' ),
 				'type'    => 'radio',
 				'id'      => 'buttons_block_design_where_to_place',
 				'options' => [
-					'before' => __( 'Before Add to cart block', 'woo-russian-marketplaces' ),
-					'after'  => __( 'After Add to cart block', 'woo-russian-marketplaces' ),
+					'before' => __( 'Before Add to cart block', 'russian-marketplaces-for-woocommerce' ),
+					'after'  => __( 'After Add to cart block', 'russian-marketplaces-for-woocommerce' ),
 				],
 				'default' => 'after',
 			]
@@ -334,26 +334,26 @@ class Settings {
 
 		$settings_slider[] = $this->add_field(
 			[
-				'name' => __( 'Block title', 'woo-russian-marketplaces' ),
+				'name' => __( 'Block title', 'russian-marketplaces-for-woocommerce' ),
 				'type' => 'title',
-				'desc' => __( 'Write your call to buy on marketplaces', 'woo-russian-marketplaces' ),
+				'desc' => __( 'Write your call to buy on marketplaces', 'russian-marketplaces-for-woocommerce' ),
 				'id'   => 'block_title',
 			]
 		);
 
 		$settings_slider[] = $this->add_field(
 			[
-				'name'    => __( 'Text', 'woo-russian-marketplaces' ),
+				'name'    => __( 'Text', 'russian-marketplaces-for-woocommerce' ),
 				'type'    => 'text',
 				'id'      => 'block_title_text',
-				'default' => __( 'Buy this product on marketplaces', 'woo-russian-marketplaces' ),
+				'default' => __( 'Buy this product on marketplaces', 'russian-marketplaces-for-woocommerce' ),
 				'css'     => 'width:260px',
 			]
 		);
 
 		$settings_slider[] = $this->add_field(
 			[
-				'name'        => __( 'Margin bottom', 'woo-russian-marketplaces' ),
+				'name'        => __( 'Margin bottom', 'russian-marketplaces-for-woocommerce' ),
 				'type'        => 'number',
 				'id'          => 'block_title_margin_bottom',
 				'default'     => 20,
@@ -364,7 +364,7 @@ class Settings {
 
 		$settings_slider[] = $this->add_field(
 			[
-				'name'        => __( 'Font size', 'woo-russian-marketplaces' ),
+				'name'        => __( 'Font size', 'russian-marketplaces-for-woocommerce' ),
 				'type'        => 'number',
 				'id'          => 'block_title_font_size',
 				'default'     => 15,
@@ -375,7 +375,7 @@ class Settings {
 
 		$settings_slider[] = $this->add_field(
 			[
-				'name'        => __( 'Color', 'woo-russian-marketplaces' ),
+				'name'        => __( 'Color', 'russian-marketplaces-for-woocommerce' ),
 				'type'        => 'color',
 				'id'          => 'block_title_color',
 				'css'         => 'width:80px',
@@ -396,7 +396,7 @@ class Settings {
 
 		$settings_slider[] = $this->add_field(
 			[
-				'name' => __( 'Marketplaces', 'woo-russian-marketplaces' ),
+				'name' => __( 'Marketplaces', 'russian-marketplaces-for-woocommerce' ),
 				'type' => 'title',
 				'id'   => 'marketplaces',
 			]
@@ -404,7 +404,7 @@ class Settings {
 
 		$settings_slider[] = $this->add_field(
 			[
-				'name'        => __( 'Buttons border width', 'woo-russian-marketplaces' ),
+				'name'        => __( 'Buttons border width', 'russian-marketplaces-for-woocommerce' ),
 				'type'        => 'number',
 				'id'          => 'button_border_width',
 				'default'     => 0,
@@ -415,7 +415,7 @@ class Settings {
 
 		$settings_slider[] = $this->add_field(
 			[
-				'name'        => __( 'Buttons border radius', 'woo-russian-marketplaces' ),
+				'name'        => __( 'Buttons border radius', 'russian-marketplaces-for-woocommerce' ),
 				'type'        => 'number',
 				'id'          => 'button_border_radius',
 				'default'     => 5,
@@ -426,7 +426,7 @@ class Settings {
 
 		$settings_slider[] = $this->add_field(
 			[
-				'name'        => __( 'Buttons font size', 'woo-russian-marketplaces' ),
+				'name'        => __( 'Buttons font size', 'russian-marketplaces-for-woocommerce' ),
 				'type'        => 'number',
 				'id'          => 'button_font_size',
 				'default'     => 14,
@@ -467,7 +467,7 @@ class Settings {
 
 			$settings_slider[] = $this->add_field(
 				[
-					'name'    => __( 'On/Off', 'woo-russian-marketplaces' ),
+					'name'    => __( 'On/Off', 'russian-marketplaces-for-woocommerce' ),
 					'type'    => 'checkbox',
 					'default' => 'no',
 					'id'      => 'marketplaces_' . $marketplace_id . '_enabled',
@@ -476,7 +476,7 @@ class Settings {
 
 			$settings_slider[] = $this->add_field(
 				[
-					'name'        => __( 'Button background color', 'woo-russian-marketplaces' ),
+					'name'        => __( 'Button background color', 'russian-marketplaces-for-woocommerce' ),
 					'type'        => 'color',
 					'default'     => $data['css']['background-color'],
 					'id'          => 'marketplaces_' . $marketplace_id . '_background_color',
@@ -487,7 +487,7 @@ class Settings {
 
 			$settings_slider[] = $this->add_field(
 				[
-					'name'        => __( 'Button border color', 'woo-russian-marketplaces' ),
+					'name'        => __( 'Button border color', 'russian-marketplaces-for-woocommerce' ),
 					'type'        => 'color',
 					'id'          => 'marketplaces_' . $marketplace_id . '_border_color',
 					'default'     => $data['css']['background-color'],
@@ -498,7 +498,7 @@ class Settings {
 
 			$settings_slider[] = $this->add_field(
 				[
-					'name'        => __( 'Marketplace name color', 'woo-russian-marketplaces' ),
+					'name'        => __( 'Marketplace name color', 'russian-marketplaces-for-woocommerce' ),
 					'type'        => 'color',
 					'id'          => 'marketplaces_' . $marketplace_id . '_color',
 					'default'     => $data['css']['color'],
@@ -509,7 +509,7 @@ class Settings {
 
 			$settings_slider[] = $this->add_field(
 				[
-					'name' => __( 'Go Pro', 'woo-russian-marketplaces' ),
+					'name' => __( 'Go Pro', 'russian-marketplaces-for-woocommerce' ),
 					'type' => 'html',
 					'id'   => 'marketplaces_' . $marketplace_id . '_gopro',
 					'text' => self::get_gopro_content(),
@@ -533,7 +533,7 @@ class Settings {
 
 		$settings_slider[] = $this->add_field(
 			[
-				'name' => __( 'SEO', 'woo-russian-marketplaces' ),
+				'name' => __( 'SEO', 'russian-marketplaces-for-woocommerce' ),
 				'type' => 'title',
 				'id'   => 'seo',
 			]
@@ -541,7 +541,7 @@ class Settings {
 
 		$settings_slider[] = $this->add_field(
 			[
-				'name'    => __( 'Wrap links with noindex', 'woo-russian-marketplaces' ),
+				'name'    => __( 'Wrap links with noindex', 'russian-marketplaces-for-woocommerce' ),
 				'type'    => 'checkbox',
 				'default' => 'no',
 				'id'      => 'seo_wrap_links_with_noindex',
@@ -550,7 +550,7 @@ class Settings {
 
 		$settings_slider[] = $this->add_field(
 			[
-				'name'    => __( 'Add nofollow attribute to links', 'woo-russian-marketplaces' ),
+				'name'    => __( 'Add nofollow attribute to links', 'russian-marketplaces-for-woocommerce' ),
 				'type'    => 'checkbox',
 				'default' => 'no',
 				'id'      => 'seo_add_nofollow_attribute_to_links',
@@ -559,7 +559,7 @@ class Settings {
 
 		$settings_slider[] = $this->add_field(
 			[
-				'name'    => __( 'Open links in a new tab', 'woo-russian-marketplaces' ),
+				'name'    => __( 'Open links in a new tab', 'russian-marketplaces-for-woocommerce' ),
 				'type'    => 'checkbox',
 				'default' => 'no',
 				'id'      => 'seo_open_links_in_a_new_tab',
@@ -628,14 +628,14 @@ class Settings {
 		ob_start();
 		?>
 		<div class="wplovers-gopro">
-			<p><b><?php esc_html_e( 'Want to automatically fill in product links?', 'woo-russian-marketplaces' ); ?></b> <?php esc_html_e( 'Connect integration with marketplaces and get:', 'woo-russian-marketplaces' ); ?></p>
+			<p><b><?php esc_html_e( 'Want to automatically fill in product links?', 'russian-marketplaces-for-woocommerce' ); ?></b> <?php esc_html_e( 'Connect integration with marketplaces and get:', 'russian-marketplaces-for-woocommerce' ); ?></p>
 			<ul>
-				<li><?php esc_html_e( 'Automatic download and upload products;', 'woo-russian-marketplaces' ); ?></li>
-				<li><?php esc_html_e( 'Loading orders;', 'woo-russian-marketplaces' ); ?></li>
-				<li><?php esc_html_e( 'Exchange of balances;', 'woo-russian-marketplaces' ); ?></li>
-				<li><?php esc_html_e( 'Flexible pricing.', 'woo-russian-marketplaces' ); ?></li>
+				<li><?php esc_html_e( 'Automatic download and upload products;', 'russian-marketplaces-for-woocommerce' ); ?></li>
+				<li><?php esc_html_e( 'Loading orders;', 'russian-marketplaces-for-woocommerce' ); ?></li>
+				<li><?php esc_html_e( 'Exchange of balances;', 'russian-marketplaces-for-woocommerce' ); ?></li>
+				<li><?php esc_html_e( 'Flexible pricing.', 'russian-marketplaces-for-woocommerce' ); ?></li>
 			</ul>
-			<p><a href="<?php echo esc_url( self::get_gopro_link() ); ?>"><b><?php esc_html_e( 'Yes, I want to automate everything!', 'woo-russian-marketplaces' ); ?></b></a></p>
+			<p><a href="<?php echo esc_url( self::get_gopro_link() ); ?>"><b><?php esc_html_e( 'Yes, I want to automate everything!', 'russian-marketplaces-for-woocommerce' ); ?></b></a></p>
 		</div>
 		<?php
 		return ob_get_clean();

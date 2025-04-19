@@ -2,7 +2,7 @@
 /**
  * Вывод виджета во фронтенде.
  *
- * @package woo-russian-marketplaces
+ * @package russian-marketplaces-for-woocommerce
  */
 
 namespace WPlovers\WooRussianMarketplaces;
@@ -32,7 +32,7 @@ class Widget {
 		$settings     = Settings::get_options();
 		ob_start();
 		?>
-		.woo-russian-marketplaces {
+		.russian-marketplaces-for-woocommerce {
 			background-color: <?php echo esc_html( $settings['buttons_block_design_background_color'] ); ?>;
 			padding: <?php echo esc_html( $settings['buttons_block_design_padding'] ); ?>px;
 			border-radius: <?php echo esc_html( $settings['buttons_block_design_border_radius'] ); ?>px;
@@ -42,13 +42,13 @@ class Widget {
 			border-style: solid;
 			border-color: <?php echo esc_html( $settings['buttons_block_design_border_color'] ); ?>;
 		}
-		.woo-russian-marketplaces .woo-russian-marketplaces__header {
+		.russian-marketplaces-for-woocommerce .russian-marketplaces-for-woocommerce__header {
 			font-weight: 700;
 			margin-bottom: <?php echo esc_html( $settings['block_title_margin_bottom'] ); ?>px;
 			font-size: <?php echo esc_html( $settings['block_title_font_size'] ); ?>px;
 			color: <?php echo esc_html( $settings['block_title_color'] ); ?>;
 		}
-		.woo-russian-marketplaces .woo-russian-marketplaces__list {
+		.russian-marketplaces-for-woocommerce .russian-marketplaces-for-woocommerce__list {
 			display: flex;
 			flex-direction: row;
 			flex-wrap: wrap;
@@ -56,7 +56,7 @@ class Widget {
 			align-items: center;
 			justify-content: flex-start;
 		}
-		.woo-russian-marketplaces .woo-russian-marketplaces__link {
+		.russian-marketplaces-for-woocommerce .russian-marketplaces-for-woocommerce__link {
 			text-decoration: none;
 			text-transform: uppercase;
 			padding: 8px 22px;
@@ -67,7 +67,7 @@ class Widget {
 			font-size: <?php echo esc_html( $settings['button_font_size'] ); ?>px;
 			border-radius: <?php echo esc_html( $settings['button_border_radius'] ); ?>px;
 		}
-		.woo-russian-marketplaces .woo-russian-marketplaces__link:hover {
+		.russian-marketplaces-for-woocommerce .russian-marketplaces-for-woocommerce__link:hover {
 			opacity: 0.8;
 		}
 		<?php foreach ( $urls as $marketplace => $url ) : ?>
@@ -76,7 +76,7 @@ class Widget {
 				continue;
 			}
 			?>
-			.woo-russian-marketplaces .woo-russian-marketplaces__link--<?php echo esc_html( $marketplace ); ?> {
+			.russian-marketplaces-for-woocommerce .russian-marketplaces-for-woocommerce__link--<?php echo esc_html( $marketplace ); ?> {
 				background-color: <?php echo esc_html( $settings[ 'marketplaces_' . $marketplace . '_background_color' ] ); ?>;
 				border-color: <?php echo esc_html( $settings[ 'marketplaces_' . $marketplace . '_border_color' ] ); ?>;
 				color: <?php echo esc_html( $settings[ 'marketplaces_' . $marketplace . '_color' ] ); ?>;
@@ -101,7 +101,7 @@ class Widget {
 				wc_print_notice(
 					sprintf(
 					/* translators: plugin name, settings link */
-						__( 'Плагин "%1$s" активирован, но не настроен! <a href="%2$s">Настроить плагин.</a>', 'woo-russian-marketplaces' ),
+						__( 'Плагин "%1$s" активирован, но не настроен! <a href="%2$s">Настроить плагин.</a>', 'russian-marketplaces-for-woocommerce' ),
 						Utils::get_plugin_name(),
 						Settings::get_settings_link()
 					),

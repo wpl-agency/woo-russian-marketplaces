@@ -2,7 +2,7 @@
 /**
  * Основной файл плагина.
  *
- * @package woo-russian-marketplaces
+ * @package russian-marketplaces-for-woocommerce
  */
 
 namespace WPlovers\WooRussianMarketplaces;
